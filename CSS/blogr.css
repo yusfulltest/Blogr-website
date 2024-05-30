@@ -1,0 +1,149 @@
+body{
+padding: 0px;
+margin: 0px;
+overflow-x: hidden;
+    
+    
+}
+
+nav{
+
+    border-bottom-left-radius: 100px;
+    height: 500px;
+    width: 100vw;
+       background:linear-gradient(to right, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+       
+
+}
+
+.nav-wrap{
+    overflow-x: hidden;
+    height:500px;
+
+background-image: url("/images/bg-pattern-intro-mobile.svg");
+background-repeat: no-repeat;
+background-position: center;
+border-bottom-left-radius: 100px;
+/* position: absolute;
+right: 0px;
+left: 0px; */
+
+  
+}
+
+.linebar{
+   height:40px; 
+    
+}
+
+ .mainUL .mainLI{
+    padding-left: 50px;
+    
+  
+
+ 
+}
+
+.mainUL{
+    /* height: 30px; */
+
+   
+
+}
+
+.mainLI{
+    /* padding-left: 50px;
+    
+    background: green; */
+}
+
+
+
+.Mainlist {
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+
+
+.loginbutton{
+    padding-top: 10px;
+}
+
+.login{
+    padding-right: 30px;
+}
+
+.menutoggle{
+    display: none;
+}
+
+
+
+.butts1{
+    background: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: hsl(356, 100%, 66%);
+
+}
+
+.Nested1 li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+  background: hsl(355, 100%, 74%);
+  padding: 10px;
+    display: none;
+   
+    /* font-family: "Overpass", sans-serif; */
+}
+
+.mainLI:hover .Nested1 li a{
+    
+    display: block;
+   
+   
+}
+
+  
+
+
+ /* .linebar ul li:hover ul {
+   display: block
+
+
+   
+ } */
+
+
+
+
+ 
+
+
+/* .menu-toggle ::before{
+   position: absolute;
+
+} */
+
+@media(max-width:800px){
+
+    .linebar,ul.mainUL,.loginbutton{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+       
+       row-gap: 30px;
+      
+        
+       
+    }
+
+    
+}
