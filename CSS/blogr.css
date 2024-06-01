@@ -7,80 +7,120 @@ overflow-x: hidden;
 }
 
 nav{
-
+    background:linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+height: 500px;
     border-bottom-left-radius: 100px;
-    height: 500px;
-    width: 100vw;
-       background:linear-gradient(to right, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
-       
+    display:flex;
+justify-content: center;
+  
 
 }
 
-.nav-wrap{
-    overflow-x: hidden;
-    height:500px;
+.insidenav{
+    width: 85vw;
+padding-top: 50px;
+display:flex;
 
-background-image: url("/images/bg-pattern-intro-mobile.svg");
-background-repeat: no-repeat;
-background-position: center;
-border-bottom-left-radius: 100px;
-/* position: absolute;
-right: 0px;
-left: 0px; */
-
-  
+    /* background-image: url("/images/bg-pattern-intro-desktop.svg"); */
+   
 }
 
 .linebar{
-   height:40px; 
-    
-}
-
- .mainUL .mainLI{
-    padding-left: 50px;
-    
-  
-
- 
-}
-
-.mainUL{
-    /* height: 30px; */
-
+    height: 50px;
+   margin-top:-8px ;
+   padding-left: 30px;
+   
    
 
+  
 }
 
-.mainLI{
-    /* padding-left: 50px;
-    
-    background: green; */
+.hrline{
+    display: none;
 }
 
 
 
-.Mainlist {
+li.mainLI a.login,a{
     font-weight: 500;
     font-family: "Ubuntu", sans-serif;
     color: hsl(0, 0%, 100%);
-    text-decoration: none;
-    cursor: pointer;
+   text-decoration: none;
     
 }
 
 
 
+li.mainLI:hover a{
+   
+   text-decoration:underline;
+
+   
+}
+
+li.mainLI:hover i{
+    transform: rotate(180deg);
+    
+        
+ }
+
+
+
+ul.Nested1 li a{
+display:none;
+color: black;
+font-weight: 400;
+font-size: 14px;
+font-family: "Ubuntu", sans-serif;
+padding: 10px;
+line-height: 12px;
+text-decoration: none;
+border-style: hidden;
+
+ }
+
+
+li.mainLI:hover ul.Nested1 li a{
+display: block;
+text-decoration:none ;
+
+
+}
+
+li.mainLI:hover ul.Nested1{
+    background: white;
+    border-radius: 10px;
+    width: 110px;
+    position: relative;
+    top: 10px;
+    left: -10px;    
+
+}
+
+li.mainLI3:hover ul.Nested1{
+    background: white;
+    border-radius: 10px;
+    width: 150px;
+    position: relative;
+    left: -30px ;
+    top: 10px;
+}
+
+
+.menutoggle{
+   display: none;
+   
+    
+}
+
 .loginbutton{
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 .login{
-    padding-right: 30px;
+    margin-right: 20px;
 }
 
-.menutoggle{
-    display: none;
-}
 
 
 
@@ -89,61 +129,143 @@ left: 0px; */
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     color: hsl(356, 100%, 66%);
+    width:  120px;
+    margin-top: -4px;
 
 }
 
-.Nested1 li a{
-    text-decoration: none;
-    color: black;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-  background: hsl(355, 100%, 74%);
-  padding: 10px;
-    display: none;
-   
-    /* font-family: "Overpass", sans-serif; */
+.butts:hover{
+    background: hsl(355, 100%, 74%);
 }
 
-.mainLI:hover .Nested1 li a{
-    
-    display: block;
-   
-   
-}
-
-  
 
 
- /* .linebar ul li:hover ul {
-   display: block
+/* /////////////////RESPONSIVENESS START HERE//////////// */
 
-
-   
- } */
-
-
-
-
- 
-
-
-/* .menu-toggle ::before{
-   position: absolute;
-
-} */
 
 @media(max-width:800px){
-
-    .linebar,ul.mainUL,.loginbutton{
-        display: flex;
-        flex-direction: column;
-        align-items: center ;
-       
-       row-gap: 30px;
-      
-        
-       
+    .insidenav{
+        width: 90vw;
     }
 
+.logomenu{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menutoggle{
+    display: inline-block;
+   
+}
+
+.menutoggle:hover{
+cursor: pointer;
+}
+
+.linebar,.mainUL,.loginbutton{
+    display: flex;
+    flex-direction: column;
+   
+  width: 70vw;
+    row-gap: 15px !important;
+
     
+}
+
+.hrline{
+    display: block;
+    width: 60vw;
+    position: relative;
+    right: 25vw;
+    top: 15px;
+
+}
+
+.loginbutton{
+position: relative;
+right: 28vw;
+
+bottom: 0px;
+padding-left: 25vw;
+
+
+}
+
+.login{
+    padding-left: 40px;
+    
+   
+
+}
+
+.linebar{
+
+ position: absolute;
+ left: 20vw;
+ top: 110px;
+ width: 70vw;
+ height:450px;
+ padding-bottom:120px ;
+ padding-left: 30vw;
+ border-radius:5px;
+ background:white;
+box-shadow:  0px 1px 0px 0px;
+
+}
+
+
+li.mainLI a.login, a{
+    width: 100px;
+    color: black;
+    font-family: "Overpass", sans-serif;
+    
+}
+
+li.mainLI i{
+   
+    color: hsl(356, 100%, 66%);
+    font-size: small;
+    
+    
+}
+
+a.butts1{
+    color: white;
+    background:linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+}
+
+li.mainLI:hover ul.Nested1{
+    background: whitesmoke;
+    border-radius: 10px;
+    width: 60vw;
+    position: relative;
+    top: 10px;
+    left: -25vw;
+    padding: 10px;
+    padding-left: 23vw;
+    text-align: center;
+    
+   
+    
+
+}
+
+
+ .insidenav{
+    justify-content: space-between;
+
+
+}
+
+}
+
+@media(max-width:768px){
+
+.insidenav{
+    
+   
+}
+
+
 }
