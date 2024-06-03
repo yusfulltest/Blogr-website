@@ -1,81 +1,135 @@
 body{
 padding: 0px;
 margin: 0px;
+width: 100vw;
 overflow-x: hidden;
+
+
     
     
 }
 
 nav{
-    background:linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
-height: 500px;
-    border-bottom-left-radius: 100px;
-    display:flex;
-justify-content: center;
+    background:linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%) );
+  border-bottom-left-radius: 100px;
+overflow-x: hidden;
+   
+ 
   
 
 }
 
-.insidenav{
-    width: 85vw;
-padding-top: 50px;
-display:flex;
+.navwrap{
+    
+    border-bottom-left-radius: 100px;
+    overflow-x: hidden;
+    width: 1250px;
+    height:560px;
+    background-image: url("/images/bg-pattern-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position:  -310px -230px;
+         
 
-    /* background-image: url("/images/bg-pattern-intro-desktop.svg"); */
+    
+
+
+}
+
+section{
+ 
+ 
+}
+
+
+
+
+
+.logomenu{
+    display:flex ;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
    
 }
 
+
+
 .linebar{
-    height: 50px;
-   margin-top:-8px ;
-   padding-left: 30px;
+    position: absolute;
+    width: 85vw;
+    height: 475px;
+    top: 110px;
+    left: 23px;
+    box-shadow: 0px 5px;
+    border-radius: 7px;
+text-align: center;
+padding-top: 30px;
+background-color: white;
+display: none;
+  
    
-   
+  
 
   
 }
 
 .hrline{
-    display: none;
+    width: 75vw;
+    margin-left: 20px;
+    margin-top: 35px;
+   
+    
 }
 
 
 
 li.mainLI a.login,a{
     font-weight: 500;
-    font-family: "Ubuntu", sans-serif;
-    color: hsl(0, 0%, 100%);
+    /* font-family: "Ubuntu", sans-serif; */
+    /* color: hsl(0, 0%, 100%); */
+    color: black;
+    font-family: "Overpass", sans-serif;
    text-decoration: none;
     
 }
 
+li.mainLI i{
+   
+    color: hsl(356, 100%, 66%);
+    font-size: small;
+    
+    
+}
 
 
-li.mainLI:hover a{
+/* li.mainLI:hover a{
    
    text-decoration:underline;
 
    
-}
+} */
 
 li.mainLI:hover i{
     transform: rotate(180deg);
-    
-        
+     
  }
 
 
 
+
+
 ul.Nested1 li a{
-display:none;
 color: black;
-font-weight: 400;
+font-weight: 500;
 font-size: 14px;
 font-family: "Ubuntu", sans-serif;
-padding: 10px;
-line-height: 12px;
+padding-top: 30px;
+line-height: 5px;
 text-decoration: none;
 border-style: hidden;
+display: none;
+
 
  }
 
@@ -87,30 +141,37 @@ text-decoration:none ;
 
 }
 
-li.mainLI:hover ul.Nested1{
-    background: white;
-    border-radius: 10px;
-    width: 110px;
-    position: relative;
-    top: 10px;
-    left: -10px;    
 
+li.mainLI:hover ul.Nested1{
+    background: whitesmoke;
+    border-radius: 7px;
+    width: 75vw;
+    height: 200px;
+    position: relative;
+    left:18px ;
+    top: 10px;
 }
+
+
+li.mainLI2:hover ul.Nested1{
+    background: whitesmoke;
+    border-radius: 7px;
+    width: 75vw;
+    height: 170px;
+    position: relative;
+    left: 18px ;
+    top: 10px;
+}
+
 
 li.mainLI3:hover ul.Nested1{
-    background: white;
-    border-radius: 10px;
-    width: 150px;
+    background: whitesmoke;
+    border-radius: 7px;
+    width: 75vw;
+    height: 140px;
     position: relative;
-    left: -30px ;
+    left: 18px ;
     top: 10px;
-}
-
-
-.menutoggle{
-   display: none;
-   
-    
 }
 
 .loginbutton{
@@ -125,14 +186,16 @@ li.mainLI3:hover ul.Nested1{
 
 
 .butts1{
-    background: white;
+    background:linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
-    color: hsl(356, 100%, 66%);
+   color: white;
     width:  120px;
     margin-top: -4px;
 
 }
+
+
 
 .butts:hover{
     background: hsl(355, 100%, 74%);
@@ -143,129 +206,3 @@ li.mainLI3:hover ul.Nested1{
 /* /////////////////RESPONSIVENESS START HERE//////////// */
 
 
-@media(max-width:800px){
-    .insidenav{
-        width: 90vw;
-    }
-
-.logomenu{
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menutoggle{
-    display: inline-block;
-   
-}
-
-.menutoggle:hover{
-cursor: pointer;
-}
-
-.linebar,.mainUL,.loginbutton{
-    display: flex;
-    flex-direction: column;
-   
-  width: 70vw;
-    row-gap: 15px !important;
-
-    
-}
-
-.hrline{
-    display: block;
-    width: 60vw;
-    position: relative;
-    right: 25vw;
-    top: 15px;
-
-}
-
-.loginbutton{
-position: relative;
-right: 28vw;
-
-bottom: 0px;
-padding-left: 25vw;
-
-
-}
-
-.login{
-    padding-left: 40px;
-    
-   
-
-}
-
-.linebar{
-
- position: absolute;
- left: 20vw;
- top: 110px;
- width: 70vw;
- height:450px;
- padding-bottom:120px ;
- padding-left: 30vw;
- border-radius:5px;
- background:white;
-box-shadow:  0px 1px 0px 0px;
-
-}
-
-
-li.mainLI a.login, a{
-    width: 100px;
-    color: black;
-    font-family: "Overpass", sans-serif;
-    
-}
-
-li.mainLI i{
-   
-    color: hsl(356, 100%, 66%);
-    font-size: small;
-    
-    
-}
-
-a.butts1{
-    color: white;
-    background:linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
-}
-
-li.mainLI:hover ul.Nested1{
-    background: whitesmoke;
-    border-radius: 10px;
-    width: 60vw;
-    position: relative;
-    top: 10px;
-    left: -25vw;
-    padding: 10px;
-    padding-left: 23vw;
-    text-align: center;
-    
-   
-    
-
-}
-
-
- .insidenav{
-    justify-content: space-between;
-
-
-}
-
-}
-
-@media(max-width:768px){
-
-.insidenav{
-    
-   
-}
-
-
-}
