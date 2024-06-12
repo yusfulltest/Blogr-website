@@ -20,7 +20,7 @@
 
   <link rel="stylesheet" href="/CSS/blogr.css">
   <script src="https://kit.fontawesome.com/5997641cb9.js" crossorigin="anonymous"></script>
-
+  <script src="JAVA/blogr.js"></script>
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -35,13 +35,13 @@
 
 
 
-  <nav class="">
+  <nav>
 
 
-    <div class="navwrap pt-4  ">
+    <div class="insidenav pt-4">
 
-      
-      <section class="">
+
+      <section class="navsec1">
 
         <div class="logomenu p-4 ">
 
@@ -53,83 +53,83 @@
             </svg>
           </div>
 
-          <div class="menutoggle">
-            <img src="/images/icon-hamburger.svg">
-  
+          <div class="menutoggle" onclick="NavMenus()">
+            <img src="images/icon-hamburger.svg">
+
           </div>
-        
+
 
         </div>
 
-        <div class="linebar ">
-
-          <div class="">
-
-            <ul class=" list-inline">
-
-              <li class="mainLI"><a href="">Product <i class="fa-solid fa-angle-down"></i></a>
-
-                <ul class="Nested1 list-inline  ">
-
-                  <li><a href="">Overview</a></li>
-                  <li><a href="">Pricing</a></li>
-                  <li><a href="">Marketplace</a></li>
-                  <li><a href="">Features</a></li>
-                  <li><a href="">Integrations</a></li>
-
-                </ul>
+        <div class="linebar shadow-lg" id="lineBar">
 
 
+
+          <ul class=" list-inline">
+
+            <li class="mainLI"><a href="#">Product <i class="fa-solid fa-angle-down"></i></a>
+
+              <ul class="Nested1 list-inline ">
+
+                <li><a href="">Overview</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Marketplace</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Integrations</a></li>
+
+              </ul>
 
 
 
 
 
-              </li>
-
-              <li class="mainLI mainLI2  text-nowrap mt-4 "><a href="">Company <i class="fa-solid fa-angle-down"></i></a>
-
-                <ul class="Nested1 text-center list-inline ">
-                  <li><a href="">About</a></li>
-                  <li><a href="">Team</a></li>
-                  <li><a href="">Blog</a></li>
-                  <li><a href="">Careers</a></li>
 
 
-                </ul>
+            </li>
+
+            <li class="mainLI mainLI2  text-nowrap mt-4 "><a href="">Company <i class="fa-solid fa-angle-down"></i></a>
+
+              <ul class="Nested1 text-center list-inline ">
+                <li><a href="">About</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
 
 
-              </li>
+              </ul>
 
 
-
-              <li class="mainLI mainLI3 mt-4"><a href="">Connect <i class="fa-solid fa-angle-down "></i></a>
-
-
-                <ul class="Nested1 text-center list-inline ">
-                  <li><a href="">Contact</a></li>
-                  <li><a href="">Newsletter</a></li>
-                  <li><a href="">LinkedIn</a></li>
+            </li>
 
 
 
+            <li class="mainLI mainLI3 mt-4"><a href="">Connect <i class="fa-solid fa-angle-down "></i></a>
 
 
-                </ul>
+              <ul class="Nested1 text-center list-inline">
+                <li><a href="" >Contact</a></li>
+                <li><a href="">Newsletter</a></li>
+                <li><a href="">LinkedIn</a></li>
 
-              </li>
 
 
-            </ul>
 
-            <hr class=" hrline">
-          </div>
+
+              </ul>
+
+            </li>
+
+
+          </ul>
+
+          <hr class=" hrline">
+
 
           <div>
 
             <ul class="loginbutton list-inline  ">
 
-              <li class="line2"><a href="" class="login mx-1">Login</a></li>
+              <li class=""><a href="" class="login mx-1">Login</a></li>
               <li class="mt-4 "><a href="" class="butts1 rounded-pill btn p-2">Sign Up</a></li>
             </ul>
 
@@ -154,11 +154,31 @@
 
 
         </div>
-       
+
+
+
 
 
       </section>
-    
+
+      <section class="navsec2">
+
+        <div class="navTest text-center">
+
+          <h1 class="text1">A modern publishing platform</h1>
+          <p class="mt-3 para1">Grow your audience and build your online brand</p>
+
+          <button class="mt-4 btn rounded-5 px-3 p-2 butts2">
+            <a href=""></a>Start for Free
+          </button>
+
+          <button class=" mt-4 btn rounded-5 border px-4 p-2 butts3">
+            <a href=""></a>Learn More
+          </button>
+
+        </div>
+      </section>
+
 
     </div>
 
@@ -168,14 +188,82 @@
 
 
 
+  <main class="mt-5">
+
+    <div class="d-flex flex-column align-items-center mt-2 text-center">
+      <div class="pt-5">
+        <h1 class="tophead">Designed for the future</h1>
+
+
+
+        <img src="images/illustration-editor-mobile.svg" alt="editorImage" class="mt-5">
+      </div>
+
+      <div class="text-center textSize mt-5">
+        <h1 class="tophead">Introducing an extensible editor</h1>
+        <p class="mt-3 parablack">Blogr features an exceedingly intuitive interface which lets you focus on one thing:
+          creating content.
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+          change the looks of a blog.
+        </p>
+
+
+
+        <h1 class="tophead mt-5">Robust content management</h1>
+        <p class="parablack mt-3">Flexible content management enables users to easily move through posts. Increase the
+          usability of your blog
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
+      </div>
+
+
+
+    </div>
+
+
+    <section>
+      <div class="phoneDiv">
+
+        <div class="phoneRound  ">
+          <div class="phoneRound1">
+
+
+            <div class="phoneRound2 ">
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="phonewrap d-flex flex-column gap-3 ">
+        <div class=""><img src="images/illustration-phones.svg" alt="Phoneimg" class="img-fluid"></div>
+
+        <div class=" text-center textSize states">
+          <h1 class="topheadwhite">State of the Art Infrastructure</h1>
+          <p class="parawhite pt-2">With reliability and speed in mind, worldwide data centers provide the backbone for
+            ultra-fast
+            connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+
+        </div>
+
+      </div>
 
 
 
 
 
-  <!-- <main class="w-25 h-25 ">
-  <h1 class="z-1">ghdaSKASGDL</h1>
-</main> -->
+
+
+    </section>
 
 
 
@@ -203,9 +291,7 @@
 
 
 
-
-
-
+  </main>
 
 
 
@@ -240,27 +326,19 @@
   Login
   Sign Up
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+  
+  
 
-  Start for Free
-  Learn More
+  
 
-  Designed for the future
+  
+  
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+  
+  
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+  
+  
 
   Free, open, simple
   Blogr is a free and open source application backed by a large community of helpful developers. It supports 
