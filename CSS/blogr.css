@@ -1,35 +1,35 @@
-body{
-padding: 0px;
-margin: 0px;
-width:  100vw;
-overflow-x: hidden;
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    overflow-x: hidden;
 
 
-    
-    
+
+
 }
 
-nav{
-    
-    background:linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%) );
+nav {
+
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-bottom-left-radius: 100px;
- overflow-x:hidden ;
+    overflow-x: hidden;
 
 
 }
 
 
 
-.insidenav{
-    
+.insidenav {
+
     border-bottom-left-radius: 100px;
     overflow-x: hidden;
     width: 1250px;
-    height:560px;
+    height: 560px;
     background-image: url("../images/bg-pattern-intro-mobile.svg");
     background-repeat: no-repeat;
-    background-size: cover ;
-    background-position:  -310px -230px;
+    background-size: cover;
+    background-position: -310px -230px;
 
 
 }
@@ -37,526 +37,781 @@ nav{
 
 
 
-.logomenu{
-    display:flex ;
-   justify-content: space-between;
-   width: 100vw;
-    
-   
+.logomenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+
+
 }
 
 
 
-.linebar{
+.linebar {
 
 
-    
+
     position: absolute;
     width: 85vw;
-    height: 490px;
     top: 110px;
     left: 23px;
     border-radius: 7px;
-text-align: center;
-padding-top: 30px;
-background-color: white;
+    text-align: center;
+    padding-top: 30px;
+    background-color: white;
 
-display: none;
+    display: none;
 
 
 }
 
 
-    
 
 
-.hrline{
-    
+
+.hrline {
+
     width: 75vw;
-  margin-left: 20px;
+    margin-left: 20px;
     margin-top: 35px;
-   
-    
+
+
 }
 
 li.mainLI{
-    padding-left: 20px;
-    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-}
-
-
-li.mainLI a.login,a{
-    font-weight: 600;
-    color: hsl(207, 13%, 34%);;
-    font-family: "Overpass", sans-serif;
-   text-decoration: none;
     
-}
-
-
-
-li.mainLI i{
    
+
+}
+
+
+
+
+li.mainLI a.login,
+a {
+    font-weight: 600;
+    color: hsl(207, 13%, 34%);
+   width: 85px;
+    font-family: "Overpass", sans-serif;
+    text-decoration: none;
+
+}
+
+
+li.mainLI i {
+
     color: hsl(356, 100%, 66%);
     font-size: small;
-    
-    
+
+
 }
 
 
 
-li.mainLI:hover i{
+
+
+/* li.mainLI:visited i{
     transform: rotate(180deg);
-     
- }
+   
+   
+
+} */
 
 
+ul.Nested1 {
+    background: whitesmoke;
 
-
-
-ul.Nested1 li a{
-color: hsl(207, 13%, 34%);;
-font-weight: 500;
-
-font-family: "Ubuntu", sans-serif;
-
-line-height: 35px;
-
-text-decoration: none;
-border-style: hidden;
-display: none;
-
-
- }
-
-
-li.mainLI:hover ul.Nested1 li a{
-display: block;
-text-decoration:none ;
-
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 7px;
+    width: 85%;
+    display: none;
 
 }
 
 
-li.mainLI:hover ul.Nested1{
+
+
+
+ul.Nested1 li a {
+    color: hsl(207, 13%, 34%);
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 35px;
+    text-decoration: none;
+    border-style: hidden;
+    
+    
+
+}
+
+
+ul.Nested1 li a:hover{
+    
+    font-weight: 600;
+
+}
+
+
+
+
+/* li.mainLI:hover ul.Nested1 li a {
+    display: block;
+    text-decoration: none;
+
+
+} */
+
+
+/* li.mainLI:hover ul.Nested1 {
     background: whitesmoke;
-  
-   padding: 15px;
-   margin-top: 20px;
+
+    padding: 15px;
+    margin-top: 20px;
     border-radius: 7px;
     width: 100%;
-  
-}
+
+} */
 
 
 
-li.mainLI:hover:not(.mainLI3) ul {
-margin-top: 0px;
-padding: 0px;
-}
+/* li.mainLI:hover:not(.mainLI3) ul {
+    margin-top: 0px;
+    padding: 0px;
+} */
 
-.loginbutton{
+
+.loginbutton {
     padding-top: 12px;
-   
+
 }
 
-.login{
+.login {
     margin-right: 20px;
 }
 
 
 
 
-.butts1{
-    background:linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+.butts1 {
+    background: linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
-   color: white;
-    width:  120px;
+    color: white;
+    width: 120px;
     margin-top: -4px;
 
 }
 
 
 
-.butts:hover{
+.butts:hover {
     background: hsl(355, 100%, 74%);
 }
 
+.navsec2 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 80px;
 
-.navTest{
-   margin-top: 120px;
-width: 78vw;
-margin-left: 40px;
-    color: hsl(0, 0%, 100%);
-  
-    
 }
 
-.text1{
-    font-family: "Overpass", sans-serif;
-    font-size: 32px;
-}
 
-.parablack{
+
+
+
+
+.parablack {
     font-family: "Overpass", sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: hsl(207, 13%, 34%);
-   
-}
-
-.parawhite{
-color: hsl(0, 0%, 100%);
-font-family: "Overpass", sans-serif ;
-font-weight: 300;
 
 }
 
-.tophead{
+.parawhite {
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass", sans-serif;
+    font-weight: 300;
+
+}
+
+.para1{
+    font-size: 17px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass", sans-serif;
+    font-weight: 300;
+}
+
+.tophead {
     color: hsl(208, 49%, 24%);
     font-family: "Overpass", sans-serif;
     font-weight: 600;
 
 }
 
-.topheadwhite{
-color: hsl(0, 0%, 100%);
-font-family: "Overpass", sans-serif;
-font-size: 34px;
-font-weight: 600;
+.topheadwhite {
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
 }
 
-.butts2{
+.butts2 {
     background: white;
-    color:hsl(356, 100%, 66%) ;
+    color: hsl(356, 100%, 66%);
     font-weight: 700;
-   font-family: "Ubuntu", sans-serif;
-   
+    font-family: "Ubuntu", sans-serif;
+
 
 }
 
-.butts3{
-    
-    color:hsl(356, 100%, 66%) ;
-    font-weight: 700;
-   font-family: "Ubuntu", sans-serif;
- color:hsl(0, 0%, 100%) ;
- font-weight: 500;
- margin-left: 10px;
+.butts3 {
 
-    
+    color: hsl(356, 100%, 66%);
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    margin-left: 10px;
+
+
 }
 
 
-main{
+main {
     overflow-x: hidden;
     
-}
-
-
-
-.textSize{
-   
-    width: 78vw;
 
 }
 
 
 
-.phoneDiv{
+.textSize {
+
+    width: 79vw;
+
+}
+
+.mainsec1-1-pics{
+    width:330px;
+    height: 330px;
+    background-image: url("../images/illustration-editor-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.phoneDiv {
     margin-top: 250px;
-    height: 550px;
+    height: 600px;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
-   background:  hsl(237, 17%, 21%);
+    background: hsl(237, 17%, 21%);
    overflow: hidden;
    
+   
+
 }
 
-.phoneRound{
+.phoneRound {
     width: 450px;
     height: 450px;
     border-radius: 100%;
     position: relative;
-    top: -130px;
-    left: -35px;
+    top: -100px;
+    left: -40px;
+  
     border: solid white .1px;
-    
+
 }
 
-.phoneRound1{
-    width: 380px;
-    height: 380px;
+.phoneRound1 {
+    width: 400px;
+    height: 400px;
     position: relative;
-    left: 25px;
-    top: -10px;
+    left: 30px;
+    top: -45px;
     border-radius: 100%;
+    padding: 25px;
 
-    
-    border: solid white 0.10px;
+   border:solid white .1px ;
 }
 
-.phoneRound2{
-    width: 340px;
-    height: 340px;
+.phoneRound2 {
+    width: 345px;
+    height: 345px;
     background: hsl(237, 23%, 32%);
-    position: relative;
-    left: 20px;
-    top: 20px;
     border-radius: 100%;
-   
-    
-   
+
+
+
 }
 
 
 
-.phonewrap{
+.phonewrap {
+   
+    
     position: absolute;
-    margin-top: -770px;
-    left:-10px ;
+    right:0 ;
+    margin-top: -775px;
+   overflow-x: hidden;
    
-   
-    
 }
 
-.states{
-    position: relative;
-   left: 30px;
-   top: -3px;
+footer{
+    background:hsl(240, 10%, 16%) ;
+    border-top-right-radius: 100px;
+    margin-top: 70px;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+footer ul li:nth-of-type(1){
+    color: hsl(240, 2%, 79%);
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+}
+
+footer ul li:not(:nth-of-type(1)){
+    color: hsl(240, 2%, 79%);
+    font-weight: 400;
+    line-height: 28px;
+
 }
 
 
 /* /////////////////RESPONSIVENESS START HERE//////////// */
 
-
-
-
- @media (min-width:850px){
-
-.menutoggle{
-    display: none;
-}
-
-nav{
-    background:linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%) );
-height: 550px;
-
-}
-.insidenav{
-    background-image: url("../images/bg-pattern-intro-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-   
-   
-    width: 3200px;
-    height: 550px;
-    
-    background-position: -470px -1360px;
-  
-
-}
-
-
-    .navsec1{
-  display: flex;
- width: 100vw;
-       padding-left: 10vw;
-       padding-right: 12vw;
-        
-     
+@media (min-width:600px){
+    .phoneDiv {
+        margin-top: 250px;
+        height: 600px;
    
     }
+    
+    .phoneRound {
+        width: 500px;
+        height: 500px;
+        top: -150px;
+        left: -20px;
+ 
+    }
+    
+    .phoneRound1 {
+        width: 450px;
+        height: 450px;
+        left: 15px;
+        top: -45px;
+        border-radius: 100%;
+        padding: 25px;
+ 
+    }
+    
+    .phoneRound2 {
+        width: 390px;
+        height: 390px;
 
-    .logomenu{
-        width:fit-content ;
+    }
+    
+    
+    
+    .phonewrap {
+   
+        right:70px ;
+        margin-top: -760px;
+       overflow-x: hidden;
        
+    }
+}
+
+
+
+@media (min-width:800px) {
+
+    .menutoggle {
+        display: none;
+    }
+
+    nav {
+        background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        height: 550px;
+
+    }
+
+    .insidenav {
+        background-image: url("../images/bg-pattern-intro-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+
+        width: 3200px;
+        height: 550px;
+
+        background-position: -450px -1380px;
+
+
+    }
+
+
+    .navsec1 {
+        display: flex;
+        width: 100vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+
+
+
+    }
+
+    .logomenu {
+        width: fit-content;
+
+
+    }
+
+    .linebar {
+        display: flex;
+        justify-content: space-between;
+        position: unset;
+        height: unset;
+        width: 100%;
+        box-shadow: unset !important;
+        border-radius: 0px;
+        text-align: unset;
+        padding-top: unset;
+        background-color: unset;
+
+
+
+
+
+    }
+
+    .hrline {
+        display: none;
+    }
+
+
+    li.mainLI {
+        display: inline-table;
+        margin-left: 25px;
+        padding: 0px;
+        margin-top: 32px;
+
+
+    }
+
+    ul.Nested1 {
+        border-radius: 2px;
+
+    }
+
+    .loginbutton {
+        display: flex;
+        gap: 30px;
+        margin-top: 18px;
+    }
+
+    .login {
+        position: relative;
+        top: 2px;
+    }
+
+
+ul.Nested1 {
+    background: whitesmoke;
+
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 7px;
+    width: 85%;
+    display: none;
+
+}
+
+
+
+
+ul.Nested1 li a {
+    color: hsl(207, 13%, 34%);
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 35px;
+    text-decoration: none;
+    border-style: hidden;
+    
+
+}
+
+
+    li.mainLI a,
+    .login {
+
+        color: hsl(0, 0%, 100%);
+        font-family: "Ubuntu", sans-serif;
+
+
+    }
+
+    li.mainLI i {
+        margin-right: 3px;
+        color: white;
+    }
+
+
+    ul.Nested1 {
+        background: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 20px;
+        margin-left: -20px;
+        border-radius: 5px;
+        width: 160px;
+        display: none;
+        position: absolute;
     
     }
- 
-.linebar{
-   display:flex;
-   justify-content: space-between;
-   position: unset;
-    height: unset;
-   width:100%;
-   box-shadow: unset !important;
-    border-radius: 0px;
-text-align: unset;
-padding-top: unset;
-background-color: unset;
-
-
-
-
-      
-}
-
-.hrline{
-    display: none;
-}
-
-
-li.mainLI{
-display: inline-table;
-margin-left: 25px;
-padding: 0px;
-margin-top: 32px;
-   
-   
-}
-
-ul.Nested1{
-    border-radius: 2px;
     
-}
-
-.loginbutton{
- display:flex;
- gap: 30px;
-margin-top: 18px;
-}
-
-.login{
-    position: relative;
-    top: 2px;
-}
-
-li.mainLI a,.login{
-   
-    color: hsl(0, 0%, 100%);
-    font-family: "Ubuntu", sans-serif;
-   
     
-}
-
-li.mainLI i{
-    margin-right: 3px;
-    color: white;
-}
-
-
-li.mainLI:hover ul.Nested1{
-    width: 150px;
-    margin-left: -30px;
-    background: white;
-    text-align: left;
-    position: absolute;
-    z-index: 2;
     
-
-}
-
-li.mainLI:hover a{
-   text-decoration: underline;
-  }
-
-
-li.mainLI:hover ul.Nested1 a{
-    text-align: start;
     
-   
-}
-
-li.mainLI:not(.mainLI3):hover ul.Nested1 a{
-   padding-left: 20px;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   line-height: 5px;
-}
-
-li.mainLI:not(.mainLI3):hover ul.Nested1{
-    margin-top: 20px;
-  }
-
-
-
-
-.butts1,.butts2{
-    margin-top: -45px;
-    background:white ;
-    color: hsl(356, 100%, 66%);
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    width: 140px;
-}
-
-.butts1:hover{
-    background: hsl(355, 100%, 74%);
-    color: hsl(0, 0%, 100%);
-}
-
-.butts2:hover{
-    background: hsl(355, 100%, 74%);
-    color: hsl(0, 0%, 100%);
-}
-
-.butts3{
-    width: 140px;
-}
-
-.butts3:hover{
-    background: white;
-    color: hsl(356, 100%, 66%);
- 
-}
-
-
-/* .butts2:hover{
-    background:;
-    color:hsl(356, 100%, 66%) ;
-    font-weight: 700;
-   font-family: "Ubuntu", sans-serif;
-   
-
-} */
-
-.butts3{
+    /* ul.Nested1 li a {
+        color: hsl(207, 13%, 34%);
+        font-weight: 400;
+        font-family: "Ubuntu", sans-serif;
+        line-height: 35px;
+        text-decoration: none;
+        border-style: hidden;
+        
     
-    color:hsl(356, 100%, 66%) ;
-    font-weight: 700;
-   font-family: "Ubuntu", sans-serif;
- color:hsl(0, 0%, 100%) ;
- font-weight: 500;
- margin-left: 10px;
+    } */
+
+
+
+
+    /* li.mainLI:hover ul.Nested1 {
+        width: 160px;
+        margin-left: -25px;
+        background: white;
+        text-align: left;
+        position: absolute;
+        top: 100px;
+        z-index: 2;
+
+
+    } */
+
+    /* li.mainLI:hover a {
+        text-decoration: underline;
+    } */
+
+
+    /* li.mainLI:hover ul.Nested1 a {
+        text-align: start;
+
+
+    } */
+
+    /* li.mainLI:not(.mainLI3):hover ul.Nested1 a {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 5px;
+    }
+
+    li.mainLI:not(.mainLI3):hover ul.Nested1 {
+        margin-top: 20px;
+    } */
+
+
+
+
+    .butts1,
+    .butts2 {
+        margin-top: -45px;
+        background: white;
+        color: hsl(356, 100%, 66%);
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        width: 140px;
+    }
+
+    .butts1:hover {
+        background: hsl(355, 100%, 74%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .butts2:hover {
+        background: hsl(355, 100%, 74%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .butts3 {
+        width: 140px;
+    }
+
+    .butts3:hover {
+        background: white;
+        color: hsl(356, 100%, 66%);
+
+    }
+
+
+    .butts3 {
+
+        color: hsl(356, 100%, 66%);
+        font-weight: 700;
+        font-family: "Ubuntu", sans-serif;
+        color: hsl(0, 0%, 100%);
+        font-weight: 500;
+        margin-left: 10px;
+
+
+    }
+
+
+
+    .navsec2 {
+
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+
+
+    }
 
     
+
+    .topheadwhite {
+        font-size: 56px;
+
+    }
+
+    .mainsec1-2 h1.tophead{
+        font-size:26px ;
+    }
+
+    .para1 {
+        font-size: 20px;
+        width: 100%;
+    }
+
+
+
+
+
 }
 
+@media(min-width:1000px) {
+
+    .navsec1 {
+        display: flex;
+       width: 100vw;
+        padding-left: 12vw;
+             padding-right: 11.50vw;
+        
 
 
-.navsec2{
-   
-    display: flex;
+    }
+
+    .navsec2 {
+
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+       
+
+
+    }
+
+    /* li.mainLI:hover ul.Nested1 {
+       
+        margin-left: -20px;
+    } */
+
+    
+.mainsec1{
+    
+    flex-direction: row-reverse !important;
     justify-content: center;
-    width: 100vw;
+    margin-top: -40px;
+   
+}
+
+.mainsec1-1{
+    width: 54vw;
+    padding-left: 400px;
+   
+}
+
+.mainsec1-1-text{
+    position: absolute;
+    right: 10vw;
+    padding-top: 100px;
+
+}
+
+.mainsec1-1-pics{
+    width:900px;
+    height: 900px;
+    background-image: url("../images/illustration-editor-desktop.svg");
+   
+    background-size:contain;
+    background-repeat: no-repeat;
   
+}
+
+.mainsec1-2{
+    width:46vw ;
+    text-align: start !important;
+   padding-left: 160px;
+  
+}
+
+.mainsec1-2 h1, p{
+    width: 100%;
+   
+
 
 }
 
-.navTest{
+}
 
-    width: 80%;
-    position: relative;
-    top: -30px;
-    left: -60px;
+/* /////////RESPONSIVENESS FOR SMALLER DEVICES////////// */
+
+@media(max-width:365px) {
+
+    .mainsec1-1-pics,.laptop{
+       
+        width: 280px;
+        height: 280px;
+       /* width:100%; */
+        
+    }
+
+
+}
+
+
+@media(max-width:185px) {
+
+
  
-    
+
+ 
+
+.textSize{
+    width: 200px;
 }
 
-.text1{
-    font-size: 60px;
-    
 }
-
-.para1{
-    font-size: 20px;
-}
-
-
-
-} 
-
