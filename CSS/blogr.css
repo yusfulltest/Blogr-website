@@ -3,6 +3,7 @@ body {
     margin: 0px;
     width: 100vw;
     overflow-x: hidden;
+    
 
 
 
@@ -45,23 +46,30 @@ nav {
 
 }
 
+#opentoggle{
+    margin-top: 10px;
+  
+}
+
+#closetoggle{
+    display: none;
+   
+}
+
 
 
 .linebar {
 
-
-
     position: absolute;
     width: 85vw;
     top: 110px;
-    left: 23px;
+    left: 9vw;
     border-radius: 7px;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 10px;
     background-color: white;
-
     display: none;
-
 
 }
 
@@ -83,8 +91,7 @@ li.mainLI{
     flex-direction: column;
     align-items: center;
     
-    
-   
+ 
 
 }
 
@@ -92,48 +99,56 @@ li.mainLI{
 
 
 li.mainLI a.login,
-a {
+ a{
     font-weight: 600;
     color: hsl(207, 13%, 34%);
-   width: 85px;
+   width: 80px;
+   height: 20px;
     font-family: "Overpass", sans-serif;
     text-decoration: none;
-
-}
-
-
-li.mainLI i {
-
-    color: hsl(356, 100%, 66%);
-    font-size: small;
-
+    text-align: left;
+   
+ 
 
 }
 
 
 
+#productlist{
 
+    background-image: url("../images/icon-arrow-dark.svg");
+    background-repeat: no-repeat;
+    background-position: 70px ;
 
-/* li.mainLI:visited i{
-    transform: rotate(180deg);
-   
-   
+}
 
-} */
+#Companylist{
+    margin-left: -3px;
+  width: 90px;
+  background-image: url("../images/icon-arrow-dark.svg");
+  background-repeat: no-repeat;
+  background-position: 80px ;
+ 
+}
+
+#ConnectList{
+
+    background-image: url("../images/icon-arrow-dark.svg");
+    background-repeat: no-repeat;
+    background-position: 70px ;
+}
 
 
 ul.Nested1 {
     background: whitesmoke;
 
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 25px;
     border-radius: 7px;
     width: 85%;
     display: none;
 
 }
-
-
 
 
 
@@ -158,33 +173,6 @@ ul.Nested1 li a:hover{
 
 
 
-
-/* li.mainLI:hover ul.Nested1 li a {
-    display: block;
-    text-decoration: none;
-
-
-} */
-
-
-/* li.mainLI:hover ul.Nested1 {
-    background: whitesmoke;
-
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 7px;
-    width: 100%;
-
-} */
-
-
-
-/* li.mainLI:hover:not(.mainLI3) ul {
-    margin-top: 0px;
-    padding: 0px;
-} */
-
-
 .loginbutton {
     padding-top: 12px;
 
@@ -203,6 +191,7 @@ ul.Nested1 li a:hover{
     font-weight: 700;
     color: white;
     width: 120px;
+    height: 40px;
     margin-top: -4px;
 
 }
@@ -267,7 +256,10 @@ ul.Nested1 li a:hover{
     color: hsl(356, 100%, 66%);
     font-weight: 700;
     font-family: "Ubuntu", sans-serif;
-
+    
+    padding: 11px;
+    padding-left: 15px ;
+    padding-right: 15px ;
 
 }
 
@@ -278,9 +270,10 @@ ul.Nested1 li a:hover{
     font-family: "Ubuntu", sans-serif;
     color: hsl(0, 0%, 100%);
     font-weight: 500;
+    padding: 11px;
+    padding-left: 20px ;
+    padding-right: 20px ;
     margin-left: 10px;
-
-
 }
 
 
@@ -367,27 +360,59 @@ main {
    
 }
 
+.mainsec3-1-pics{
+   
+    width:350px ;
+    height: 350px;
+    background-image: url("../images/illustration-laptop-mobile.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
 footer{
     background:hsl(240, 10%, 16%) ;
     border-top-right-radius: 100px;
-    margin-top: 70px;
+    margin-top: 30px;
     padding-top: 60px;
     padding-bottom: 70px;
 }
 
-footer ul li:nth-of-type(1){
+footer .list-inline li a:nth-of-type(1){
+    
     color: hsl(240, 2%, 79%);
     font-weight: 700;
     font-family: "Ubuntu", sans-serif;
+    
 }
 
-footer ul li:not(:nth-of-type(1)){
+
+footer .list-inline li a:nth-of-type(1):hover{
+    
+    text-decoration: underline;
+    
+}
+
+
+footer .list-inline li:not(:nth-of-type(1)) a{
+    
     color: hsl(240, 2%, 79%);
     font-weight: 400;
-    line-height: 28px;
-
+    font-family: "Ubuntu", sans-serif;
+  
+  
+    
 }
 
+footer .list-inline li:not(:nth-of-type(1)){
+    line-height: 32px;
+}
+
+.attribution { font-size: 11px; }
+    .attribution a{ color: hsl(228, 45%, 44%); }
+    .attribution span{color:white;}
 
 /* /////////////////RESPONSIVENESS START HERE//////////// */
 
@@ -435,15 +460,18 @@ footer ul li:not(:nth-of-type(1)){
 
 
 
-@media (min-width:800px) {
+@media (min-width:830px) {
 
-    .menutoggle {
+    #opentoggle{
+     
         display: none;
+        
     }
 
     nav {
         background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
         height: 550px;
+        
 
     }
 
@@ -451,12 +479,8 @@ footer ul li:not(:nth-of-type(1)){
         background-image: url("../images/bg-pattern-intro-desktop.svg");
         background-repeat: no-repeat;
         background-size: cover;
-
-
-
         width: 3200px;
         height: 550px;
-
         background-position: -450px -1380px;
 
 
@@ -468,9 +492,8 @@ footer ul li:not(:nth-of-type(1)){
         width: 100vw;
         padding-left: 5vw;
         padding-right: 5vw;
-
-
-
+       
+ 
     }
 
     .logomenu {
@@ -484,37 +507,32 @@ footer ul li:not(:nth-of-type(1)){
         justify-content: space-between;
         position: unset;
         height: unset;
-        width: 100%;
         box-shadow: unset !important;
         border-radius: 0px;
         text-align: unset;
         padding-top: unset;
         background-color: unset;
 
-
-
-
-
     }
+
 
     .hrline {
         display: none;
     }
 
 
-    li.mainLI {
+    li.mainLI{
         display: inline-table;
         margin-left: 25px;
         padding: 0px;
         margin-top: 32px;
-
-
-    }
-
-    ul.Nested1 {
-        border-radius: 2px;
+      
 
     }
+
+
+
+
 
     .loginbutton {
         display: flex;
@@ -528,17 +546,44 @@ footer ul li:not(:nth-of-type(1)){
     }
 
 
-ul.Nested1 {
+    ul.Nested1.Nest1{
+        background: whitesmoke;
+        padding: 15px;
+        margin-top: 45px;
+        position: absolute;
+        margin-left: -50px;
+        border-radius: 5px;
+        width: 160px;
+        z-index: 2;
+    }
+
+
+
+
+ul.Nested1.Nest2{
+  
+    position: absolute;
     background: whitesmoke;
-
     padding: 15px;
-    margin-top: 10px;
-    border-radius: 7px;
-    width: 85%;
-    display: none;
-
+    margin-top: 45px;
+    margin-left: 50px;
+  border-radius: 5px;
+    width: 165px;
+    position: absolute;
+    z-index: 2;
+   
 }
 
+ul.Nested1.Nest3{
+    background: whitesmoke;
+    padding: 15px;
+    margin-top: 45px;
+    position: absolute;
+    margin-left: 138px;
+    border-radius: 5px;
+    width: 160px;
+    z-index: 2;
+}
 
 
 
@@ -547,9 +592,8 @@ ul.Nested1 li a {
     font-weight: 400;
     font-family: "Ubuntu", sans-serif;
     line-height: 35px;
-    text-decoration: none;
     border-style: hidden;
-    
+    text-decoration: none !important;
 
 }
 
@@ -560,78 +604,42 @@ ul.Nested1 li a {
         color: hsl(0, 0%, 100%);
         font-family: "Ubuntu", sans-serif;
 
-
     }
 
-    li.mainLI i {
-        margin-right: 3px;
-        color: white;
+    li.mainLI a:hover{
+        text-decoration: underline;
     }
 
 
-    ul.Nested1 {
-        background: whitesmoke;
-    
-        padding: 15px;
-        margin-top: 20px;
-        margin-left: -20px;
-        border-radius: 5px;
-        width: 160px;
-        display: none;
+    #productlist{
+
+        background-image: url("../images/icon-arrow-light.svg");
+        background-repeat: no-repeat;
+        background-position: 70px 10px;
         position: absolute;
-    
-    }
-    
-    
-    
-    
-    /* ul.Nested1 li a {
-        color: hsl(207, 13%, 34%);
-        font-weight: 400;
-        font-family: "Ubuntu", sans-serif;
-        line-height: 35px;
-        text-decoration: none;
-        border-style: hidden;
+        
         
     
-    } */
-
-
-
-
-    /* li.mainLI:hover ul.Nested1 {
-        width: 160px;
-        margin-left: -25px;
-        background: white;
-        text-align: left;
-        position: absolute;
-        top: 100px;
-        z-index: 2;
-
-
-    } */
-
-    /* li.mainLI:hover a {
-        text-decoration: underline;
-    } */
-
-
-    /* li.mainLI:hover ul.Nested1 a {
-        text-align: start;
-
-
-    } */
-
-    /* li.mainLI:not(.mainLI3):hover ul.Nested1 a {
-        padding-left: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        line-height: 5px;
     }
-
-    li.mainLI:not(.mainLI3):hover ul.Nested1 {
-        margin-top: 20px;
-    } */
+    
+    #Companylist{
+        margin-left: -3px;
+      width: 90px;
+      background-image: url("../images/icon-arrow-light.svg");
+      background-repeat: no-repeat;
+      background-position: 80px 10px;
+      position: absolute;
+      margin-left:90px;
+    }
+    
+    #ConnectList{
+    
+        background-image: url("../images/icon-arrow-light.svg");
+        background-repeat: no-repeat;
+        background-position: 70px 10px;
+        position: absolute;
+        margin-left:190px;
+    }
 
 
 
@@ -686,8 +694,7 @@ ul.Nested1 li a {
         display: flex;
         justify-content: center;
         width: 100vw;
-
-
+   
     }
 
     
@@ -709,13 +716,18 @@ ul.Nested1 li a {
 
 
 
-
 }
 
-@media(min-width:1000px) {
+@media(min-width:1000px) 
+
+
+{
+
+   
 
     .navsec1 {
         display: flex;
+        position: absolute;
        width: 100vw;
         padding-left: 12vw;
              padding-right: 11.50vw;
@@ -729,41 +741,39 @@ ul.Nested1 li a {
         display: flex;
         justify-content: center;
         width: 100vw;
-       
+        position: absolute;
+        top: 130px;
 
 
     }
 
-    /* li.mainLI:hover ul.Nested1 {
-       
-        margin-left: -20px;
-    } */
 
     
 .mainsec1{
     
     flex-direction: row-reverse !important;
     justify-content: center;
-    margin-top: -40px;
+    margin-top: -80px;
    
 }
 
 .mainsec1-1{
-    width: 54vw;
+    width: 49vw;
     padding-left: 400px;
    
 }
 
 .mainsec1-1-text{
     position: absolute;
-    right: 10vw;
-    padding-top: 100px;
+    right: 6vw;
+    margin-top: 80px;
+
 
 }
 
 .mainsec1-1-pics{
-    width:900px;
-    height: 900px;
+    width:800px;
+    height: 800px;
     background-image: url("../images/illustration-editor-desktop.svg");
    
     background-size:contain;
@@ -772,20 +782,182 @@ ul.Nested1 li a {
 }
 
 .mainsec1-2{
-    width:46vw ;
+    width:50vw ;
     text-align: start !important;
-   padding-left: 160px;
+   padding-left: 210px;
+   padding-top: 70px;
   
 }
 
-.mainsec1-2 h1, p{
-    width: 100%;
+.mainsec1-2 p:nth-of-type(1) {
+    width: 98.5%;
+
+}
+
+.mainsec1-2 p:nth-of-type(2) {
+    width: 95%;
+
+}
+
+
+.phoneDiv {
+    margin-top: 50px;
+    height: 400px;
+
+}
+
+.phoneRound {
+    width: 975px;
+    height: 975px;
+    top: -480px;
+    left: -190px;
+
+
+}
+
+.phoneRound1 {
+    width: 670px;
+    height: 670px;
+    top: 100px;
+    left: 150px;
+   padding: 30px;
+
+}
+
+.phoneRound2 {
+    width: 600px;
+    height: 600px;
+
+}
+
+
+
+.phonewrap {
+
+flex-direction: row !important;
+ left:0px ;
+    right: 0px;
+  margin-top: -470px;
+   overflow-x: hidden;
+  padding-left: 120px;
+  
+   
+}
+
+.phonewrap .phonesize{
+    width: 50vw;
+   
+}
+
+.phonewrap .textSize{
+
+  width: 50vw;
+ margin-right:10vw;
+    
+ }
+
+
+.phonewrap .textSize .topheadwhite{
+  
+   font-size: 34px;
+   text-align:left;
+  
+}
+
+.phonewrap .textSize .parawhite{
+    width: 85%;
+    text-align: left;
+   
+ }
+
+.mainsec3{
+   flex-direction: row !important;
+   margin-top: 80px !important;
+  
+}
+.mainsec3-1{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+ 
+    
+    
+}
+
+.mainsec3-1-pics{
+    width:850px ;
+    height: 850px;
+    background-image: url("../images/illustration-laptop-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: -380px;
+    
+  
    
 
 
 }
 
+.mainsec3-2{
+    width: 50vw;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+  
+   
 }
+
+.mainsec3-2 .textSize{
+    width:70% ;
+    text-align: left !important;
+    
+
+}
+
+.mainsec3-2 .textSize .tophead{
+    font-size: 26px;
+
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+footer ul{
+    margin-left:15vw;
+    justify-content: space-evenly;
+}
+
+
+footer .pt-4{
+    padding-top: 0px !important;
+    margin-top: 15px !important;
+}
+
+footer .pt-4{
+    padding-top: 0px !important;
+    margin-top: 15px !important;
+}
+
+footer .pt-3{
+    margin:10px !important;
+}
+
+
+
+.attribution{
+    width: 100vw;
+}
+
+}
+
+
+
+
 
 /* /////////RESPONSIVENESS FOR SMALLER DEVICES////////// */
 
@@ -795,8 +967,16 @@ ul.Nested1 li a {
        
         width: 280px;
         height: 280px;
-       /* width:100%; */
+     
         
+    }
+
+    .mainsec3-1-pics{
+        
+        width:280px ;
+        height: 280px;
+       
+    
     }
 
 
@@ -805,12 +985,11 @@ ul.Nested1 li a {
 
 @media(max-width:185px) {
 
-
- 
-
- 
-
 .textSize{
+    width: 200px;
+}
+
+body{
     width: 200px;
 }
 
